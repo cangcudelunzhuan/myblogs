@@ -27,23 +27,16 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: process.env.PORT || 8081,
+    port: process.env.PORT || 8090,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/pro': {
-        target: 'http://localhost:4000/',
+        target: 'http://localhost:4000',
         changeOrigin: true,
         pathRewrite: {
           '^/pro/': '/'
-        }
-      },
-      '/img': {
-        target: 'http://wn14612796.faisco.cn/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/img/': '/'
         }
       }
     },

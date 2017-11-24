@@ -9,45 +9,8 @@ if (!process.env.NODE_ENV) {
 const opn = require('opn')
 const path = require('path')
 const express = require('express')
-// const mongoose = require('mongoose')
-// require('express-mongoose')
 
 
-// var uri1 = "mongodb://localhost:32768/blog"
-// var db       = mongoose.createConnection(uri1);
-
-// var BlogSchema = new mongoose.Schema({
-//     'id': {type: String},
-//     'title': {type: String},
-//     'content': {type: String},
-//     'date': {type: Date}
-// })
-
-// var BlogModel = db.model('Blog', BlogSchema)
-
-// function createNewBlog() {
-//     var blog = new BlogModel({
-//         'id': '2',
-//         'title': 'Test Title 2',
-//         'content': 'abcdxxxxxxx',
-//         'date': new Date().getTime()
-//     })
-//     blog.save()
-//     return blog
-// }
-
-// function getAllBlogs() {
-//     BlogModel.find({
-//     }, function(err, data) {
-//         console.log(data)
-//     })
-// }
-
-// var newblog = createNewBlog()
-// console.log(newblog)
-// setTimeout(function() {
-//     getAllBlogs()
-// }, 3000)
 
 const webpack = require('webpack')
 const proxyMiddleware = require('http-proxy-middleware')
